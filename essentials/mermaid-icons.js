@@ -1,4 +1,3 @@
-import mermaid from 'CDN/mermaid.esm.mjs';
 mermaid.registerIconPacks([
   {
     name: 'logos',
