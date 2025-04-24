@@ -9,6 +9,106 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
+        "versions": [
+            {
+                "version": "8.0",
+                "tabs": [
+                    {
+                        "tab": "Guides",
+                        "groups": [
+                            {
+                                "group": "Get Started",
+                                "pages": [
+                                    "introduction",
+                                    "quickstart",
+                                    "development"
+                                ]
+                            },
+                            {
+                                "group": "Essentials",
+                                "pages": [
+                                    "essentials/markdown",
+                                    "essentials/code",
+                                    "essentials/images",
+                                    "essentials/settings",
+                                    "essentials/navigation",
+                                    "essentials/reusable-snippets",
+                                    "essentials/diagrams"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "tab": "API Reference",
+                        "groups": [
+                            {
+                                "group": "API Documentation",
+                                "pages": [
+                                    "api-reference/introduction"
+                                ]
+                            },
+                            {
+                                "group": "Endpoint Examples",
+                                "pages": [
+                                    "api-reference/endpoint/get",
+                                    "api-reference/endpoint/create",
+                                    "api-reference/endpoint/delete"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "version": "7.2",
+                "tabs": [
+                    {
+                        "tab": "Guides",
+                        "groups": [
+                            {
+                                "group": "Get Started",
+                                "pages": [
+                                    "introduction",
+                                    "quickstart",
+                                    "development"
+                                ]
+                            },
+                            {
+                                "group": "Essentials",
+                                "pages": [
+                                    "essentials/markdown",
+                                    "essentials/code",
+                                    "essentials/images",
+                                    "essentials/settings",
+                                    "essentials/navigation",
+                                    "essentials/reusable-snippets",
+                                    "essentials/diagrams"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "tab": "API Reference",
+                        "groups": [
+                            {
+                                "group": "API Documentation",
+                                "pages": [
+                                    "api-reference/introduction"
+                                ]
+                            },
+                            {
+                                "group": "Endpoint Examples",
+                                "pages": [
+                                    "api-reference/endpoint/get",
+                                    "api-reference/endpoint/create",
+                                    "api-reference/endpoint/delete"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
     "tabs": [
       {
         "tab": "Guides",
