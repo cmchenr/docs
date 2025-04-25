@@ -1,0 +1,28 @@
+---
+title: 'Network Resiliency Best Practices'
+description: 'Best practices for improving the reliability and resiliency of your Aviatrix network, including Controller, CoPilot, IAM, and gateway recommendations.'
+icon: 'network-wired'
+---
+
+# Network Resiliency Best Practices Guide
+
+This guide describes Aviatrix features that help you improve the reliability and resiliency of your Aviatrix network. These best practices help you absorb the impact of issues while continuing to provide service.
+
+> **Note:** This guide will be updated on an ongoing basis. Please contact your Aviatrix account representative if you have any questions pertaining to this document.
+
+## Overview
+- Configure timers and parameters to improve resiliency-related response times.
+- Perform operational tasks such as regular backups and responding to alerts.
+- Consider design patterns that improve resiliency, such as deploying redundant components.
+
+## Controller Best Practices
+- The Aviatrix Controller is shipped with a self-signed certificate. Establish a DNS hostname and install a TLS certificate issued by your organization or a recognized certificate authority.
+- Deploy the Aviatrix Controller and CoPilot in the same dedicated VPC.
+- Select and secure a suitable set of public IP addresses for both the Controller and CoPilot.
+
+> **Warning:** Modifying these addresses will prevent communication between the Controller and gateways. Contact Aviatrix Support in the event of any accidental modification.
+
+## Glossary
+- [Aviatrix Glossary](../getting-started/platform-overview/aviatrix-glossary.md)
+- [General Glossary](../getting-started/platform-overview/general-glossary.md)
+- [Cloud Rosetta Stone](../getting-started/platform-overview/cloud-rosetta-stone.md)

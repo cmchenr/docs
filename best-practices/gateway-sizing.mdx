@@ -1,0 +1,46 @@
+---
+title: 'Gateway Sizing Best Practices'
+description: 'Guidance on sizing Aviatrix Transit and Spoke Gateways for AWS and Azure deployments, including performance and deployment considerations.'
+icon: 'server'
+---
+
+# Gateway Sizing Best Practices Guide
+
+Although Aviatrix supports a wide array of instance types and sizes in each cloud, this reference guide provides data about gateway sizing and common deployments by other Aviatrix customers to assist you with pre-deployment planning, as well as to help right-size current deployments to maximize cost savings and efficiency.
+
+> **Note:** This data is for guidance purposes only and is based on Aviatrix Controller software version 7.2.4820. Every environment may perform differently.
+
+## Gateway Size Distribution
+
+Transit Gateways are typically larger because they serve as the hub of a hub-and-spoke architecture, terminating multiple Spoke Gateways. This means Transit Gateways need more IPsec throughput and performance compared to Spoke Gateways, which service only one VPC/VNET/VCN of workloads.
+
+The following tables and graphs (see original documentation for images) show data for AWS and Azure cloud deployments:
+
+### AWS Traffic and Deployments
+#### Transit Gateway
+- ![Transit Gateway Sizing](images/gw-sizing-aws-spoke-transit.png)
+- ![Transit Gateway Sizing with FireNet](images/gw-sizing-aws-spoke-transit-firenet.png)
+- ![Transit Gateway Sizing Table](images/gw-sizing-aws-spoke-transit-table.png)
+
+#### Spoke Gateway
+- ![Spoke Gateway Sizing](images/gw-sizing-aws-spoke-spoke.png)
+- ![Egress NAT Sizing](images/gw-sizing-aws-spoke-egress-nat.png)
+- ![NAT DCF Domain Sizing](images/gw-sizing-aws-spoke-nat-dcf-domain.png)
+- ![Spoke Gateway Sizing Table](images/gw-sizing-aws-spoke-spoke-table.png)
+
+### Azure Traffic and Deployments
+#### Transit Gateway
+- ![Transit Gateway Sizing](images/gw-sizing-azure-spoke-transit.png)
+- ![Transit Gateway Sizing with FireNet](images/gw-sizing-azure-spoke-transit-firenet.png)
+- ![Transit Gateway Sizing Table](images/gw-sizing-azure-spoke-transit-table.png)
+
+#### Spoke Gateway
+- ![Spoke Gateway Sizing](images/gw-sizing-azure-spoke-spoke.png)
+- ![Egress NAT Sizing](images/gw-sizing-azure-spoke-egress-nat.png)
+- ![NAT DCF Domain Sizing](images/gw-sizing-azure-spoke-nat-dcf-domain.png)
+- ![Spoke Gateway Sizing Table](images/gw-sizing-azure-spoke-spoke-table.png)
+
+## Bandwidth and Performance
+Gateway performance is impacted by packet size. In Aviatrix internal testing, both best-case large payload numbers and Internet Mix (iMix) numbers of varying packet sizes were used to reflect more real-world performance numbers.
+
+> **Important:** The information provided in this document is based on Aviatrix's internal testing. Your network will differ from the testing environment used by Aviatrix. Use this guide as reference only to plan your deployment or drive efficiency in your current deployment.
