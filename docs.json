@@ -16,10 +16,9 @@
           {
             "group": "Best Practices",
             "pages": [
-              "best-practices/README.md",
-              "best-practices/gateway-sizing.mdx",
-              "best-practices/secure-vpcs-best-practice.mdx",
-              "best-practices/network-resiliency-best-practice.mdx"
+              "best-practices/gateway-sizing",
+              "best-practices/secure-vpcs-best-practice",
+              "best-practices/network-resiliency-best-practice"
             ]
           }
         ]
