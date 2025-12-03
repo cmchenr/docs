@@ -16,6 +16,11 @@ Transit Gateways are typically larger because they serve as the hub of a hub-and
 
 The following tables and graphs (see original documentation for images) show data for AWS and Azure cloud deployments:
 
+
+
+### AWS Traffic and Deployments
+
+#### Transit Gateway
 ```mermaid
 xychart-beta
     title "Spoke-Transit-Spoke (Large Payload) - Gbps"
@@ -23,12 +28,14 @@ xychart-beta
     y-axis "Gbps" 0 --> 50
     bar [1, 3, 5, 17, 30, 47]
 ```
+```mermaid
+xychart-beta
+    title "Spoke-Transit-Spoke (Internet Mix) - Gbps"
+    x-axis ["X Small", "Small", "Medium", "Large", "X Large", "XX Large"]
+    y-axis "Gbps" 0 --> 50
+    bar [0.5, 1, 2, 5, 8, 14]
+```
 
-### AWS Traffic and Deployments
-
-#### Transit Gateway
-
-- ![Transit Gateway Sizing](images/gw-sizing-aws-spoke-transit.png)
 - ![Transit Gateway Sizing with FireNet](images/gw-sizing-aws-spoke-transit-firenet.png)
 - ![Transit Gateway Sizing Table](images/gw-sizing-aws-spoke-transit-table.png)
 
